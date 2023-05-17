@@ -1,0 +1,10 @@
+Sockets multicast são uma forma de comunicação em rede que permite a transmissão de dados de um emissor para vários receptores simultaneamente. Imagine uma situação em que um computador precisa enviar um dado para um grupo de outros computadores na rede, em vez de enviar o dado separadamente para cada um deles. Os sockets multicast são usados para facilitar essa comunicação em grupo.
+
+A finalidade dos sockets multicast é permitir a transmissão eficiente de dados para múltiplos destinos simultaneamente, economizando recursos de rede e reduzindo o tráfego desnecessário. Em vez de enviar várias cópias do mesmo dado para cada destinatário individualmente, o emissor pode usar um socket multicast para enviar o dado apenas uma vez e deixar que a rede se encarregue de distribuí-lo para todos os membros do grupo multicast.
+
+
+Essa abordagem é particularmente útil em cenários onde há um grande número de receptores que precisam receber os mesmos dados em tempo real, como em streaming de vídeo, jogos online, distribuição de conteúdo em tempo real, entre outros. Os sockets multicast permitem a criação de aplicações escaláveis e eficientes, onde um emissor pode enviar informações para muitos receptores sem sobrecarregar a rede com tráfego redundante.
+
+No entanto, é importante ressaltar que nem todas as redes e infraestruturas suportam ou estão configuradas para suportar sockets multicast. É necessário configurar adequadamente os roteadores e switches de rede para permitir o tráfego multicast. Além disso, os dispositivos receptores devem se inscrever explicitamente no grupo multicast para receber os dados transmitidos.
+
+Em resumo, os sockets multicast são uma forma de comunicação em grupo que permite o envio eficiente de dados para vários receptores simultaneamente, reduzindo o tráfego de rede e proporcionando escalabilidade em aplicações que exigem transmissão em tempo real para um grande número de destinos.
