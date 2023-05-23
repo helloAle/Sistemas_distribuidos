@@ -1,0 +1,15 @@
+No código fornecido, temos um exemplo de comunicação entre um servidor e um cliente utilizando sockets TCP/IP. O servidor é responsável por receber as mensagens do cliente e executar ações com base no tipo de mensagem recebida. O cliente, por sua vez, envia mensagens para o servidor e recebe as respostas correspondentes.
+
+O protocolo de comunicação é definido no formato "tipo|dados", em que o tipo pode ser "MSG" para mensagens de texto ou "ITEM" para informações de item, e os dados podem ser uma mensagem de texto ou informações de item no formato "nome|quantidade".
+
+No servidor, temos as funções receive_message e send_message para receber e enviar mensagens, respectivamente. Essas funções são utilizadas para receber as mensagens do cliente, extrair o tipo e os dados da mensagem e enviar respostas de volta ao cliente.
+
+Além disso, temos as funções relacionadas ao banco de dados, como add_item_to_database, remove_item_from_database, update_item_in_database e get_item_from_database, que são responsáveis por realizar operações de adição, remoção, atualização e busca de itens no banco de dados SQLite. Essas funções se conectam ao banco de dados, executam as consultas apropriadas e fecham a conexão após a conclusão.
+
+No cliente, temos as funções receive_message e send_message que são análogas às do servidor, porém utilizadas para a comunicação com o servidor. Além disso, temos a função handle_response, que recebe o tipo e os dados da resposta do servidor e realiza o tratamento adequado, exibindo a mensagem ecoada ou informando sobre um tipo de mensagem inválido.
+
+No código do cliente, temos a função execute_client, que encapsula a interação com o servidor. Nessa função, são enviadas mensagens para o servidor utilizando a função send_message e as respostas do servidor são tratadas utilizando a função handle_response.
+
+Dessa forma, o cliente pode enviar diferentes tipos de mensagens para o servidor, como adicionar um item, remover um item, atualizar um item ou buscar informações sobre um item. O servidor recebe essas mensagens, executa as ações correspondentes no banco de dados e envia as respostas adequadas de volta ao cliente.
+
+Essa estrutura permite a comunicação eficiente entre o servidor e o cliente, permitindo a manipulação de informações sobre itens da despensa de forma organizada e controlada.
