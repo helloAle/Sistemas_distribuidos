@@ -1,0 +1,3 @@
+Modelo síncrono: Este modelo envolve a comunicação em que um processo espera por uma resposta antes de prosseguir com a execução. Isso significa que o processo emissor bloqueia até que o processo receptor envie uma resposta. Esse modelo é útil quando a resposta do processo receptor é necessária antes de continuar.
+
+Modelo assíncrono: Este modelo permite que o processo emissor continue sua operação enquanto a mensagem é entregue ao processo receptor em segundo plano. Não há bloqueio e o processo emissor não aguarda uma resposta do processo receptor. Esse modelo é útil quando a resposta do processo receptor não é necessária imediatamente.
